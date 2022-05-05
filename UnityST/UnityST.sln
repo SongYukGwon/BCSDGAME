@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31624.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnityST", "UnityST.csproj", "{AB76A976-69B0-4ACD-889B-D6D4EBF69AC2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution item", "Solution item", "{385C1137-50C5-4117-9D41-D6E7FE228AF5}"
+	ProjectSection(SolutionItems) = preProject
+		목차.txt = 목차.txt
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01class", "..\01class\01class.csproj", "{8FEAE99C-56F7-45F8-B267-DCA68FAAD341}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AB76A976-69B0-4ACD-889B-D6D4EBF69AC2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB76A976-69B0-4ACD-889B-D6D4EBF69AC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB76A976-69B0-4ACD-889B-D6D4EBF69AC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB76A976-69B0-4ACD-889B-D6D4EBF69AC2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8FEAE99C-56F7-45F8-B267-DCA68FAAD341}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8FEAE99C-56F7-45F8-B267-DCA68FAAD341}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8FEAE99C-56F7-45F8-B267-DCA68FAAD341}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8FEAE99C-56F7-45F8-B267-DCA68FAAD341}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C4C464A3-C918-460D-A750-2118BB3C099E}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,7 @@
+C:\Users\thddb\source\repos\UnityST\bin\Debug\UnityST.exe.config
+C:\Users\thddb\source\repos\UnityST\bin\Debug\UnityST.exe
+C:\Users\thddb\source\repos\UnityST\bin\Debug\UnityST.pdb
+C:\Users\thddb\source\repos\UnityST\obj\Debug\UnityST.csproj.AssemblyReference.cache
+C:\Users\thddb\source\repos\UnityST\obj\Debug\UnityST.csproj.CoreCompileInputs.cache
+C:\Users\thddb\source\repos\UnityST\obj\Debug\UnityST.exe
+C:\Users\thddb\source\repos\UnityST\obj\Debug\UnityST.pdb
