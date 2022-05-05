@@ -1,0 +1,7 @@
+C:\Users\thddb\source\repos\BCSDGAME\30Overraiding\obj\Debug\30Overraiding.csproj.AssemblyReference.cache
+C:\Users\thddb\source\repos\BCSDGAME\30Overraiding\obj\Debug\30Overraiding.csproj.CoreCompileInputs.cache
+C:\Users\thddb\source\repos\BCSDGAME\30Overraiding\bin\Debug\30Overraiding.exe.config
+C:\Users\thddb\source\repos\BCSDGAME\30Overraiding\bin\Debug\30Overraiding.exe
+C:\Users\thddb\source\repos\BCSDGAME\30Overraiding\bin\Debug\30Overraiding.pdb
+C:\Users\thddb\source\repos\BCSDGAME\30Overraiding\obj\Debug\30Overraiding.exe
+C:\Users\thddb\source\repos\BCSDGAME\30Overraiding\obj\Debug\30Overraiding.pdb
