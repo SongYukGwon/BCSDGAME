@@ -1,0 +1,6 @@
+C:\Users\thddb\source\repos\BCSDGAME\32Array\bin\Debug\32Array.exe.config
+C:\Users\thddb\source\repos\BCSDGAME\32Array\bin\Debug\32Array.exe
+C:\Users\thddb\source\repos\BCSDGAME\32Array\bin\Debug\32Array.pdb
+C:\Users\thddb\source\repos\BCSDGAME\32Array\obj\Debug\32Array.csproj.CoreCompileInputs.cache
+C:\Users\thddb\source\repos\BCSDGAME\32Array\obj\Debug\32Array.exe
+C:\Users\thddb\source\repos\BCSDGAME\32Array\obj\Debug\32Array.pdb
