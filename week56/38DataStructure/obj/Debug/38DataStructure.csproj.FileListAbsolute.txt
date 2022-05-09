@@ -1,0 +1,7 @@
+C:\Users\thddb\source\repos\BCSDGAME\38DataStructure\bin\Debug\38DataStructure.exe.config
+C:\Users\thddb\source\repos\BCSDGAME\38DataStructure\bin\Debug\38DataStructure.exe
+C:\Users\thddb\source\repos\BCSDGAME\38DataStructure\bin\Debug\38DataStructure.pdb
+C:\Users\thddb\source\repos\BCSDGAME\38DataStructure\obj\Debug\38DataStructure.csproj.AssemblyReference.cache
+C:\Users\thddb\source\repos\BCSDGAME\38DataStructure\obj\Debug\38DataStructure.csproj.CoreCompileInputs.cache
+C:\Users\thddb\source\repos\BCSDGAME\38DataStructure\obj\Debug\38DataStructure.exe
+C:\Users\thddb\source\repos\BCSDGAME\38DataStructure\obj\Debug\38DataStructure.pdb

@@ -1,0 +1,6 @@
+C:\Users\thddb\source\repos\BCSDGAME\DataStructEx\bin\Debug\DataStructEx.exe.config
+C:\Users\thddb\source\repos\BCSDGAME\DataStructEx\bin\Debug\DataStructEx.exe
+C:\Users\thddb\source\repos\BCSDGAME\DataStructEx\bin\Debug\DataStructEx.pdb
+C:\Users\thddb\source\repos\BCSDGAME\DataStructEx\obj\Debug\DataStructEx.csproj.CoreCompileInputs.cache
+C:\Users\thddb\source\repos\BCSDGAME\DataStructEx\obj\Debug\DataStructEx.exe
+C:\Users\thddb\source\repos\BCSDGAME\DataStructEx\obj\Debug\DataStructEx.pdb

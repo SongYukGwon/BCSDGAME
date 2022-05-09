@@ -1,0 +1,7 @@
+C:\Users\thddb\source\repos\BCSDGAME\Node\bin\Debug\Node.exe.config
+C:\Users\thddb\source\repos\BCSDGAME\Node\bin\Debug\Node.exe
+C:\Users\thddb\source\repos\BCSDGAME\Node\bin\Debug\Node.pdb
+C:\Users\thddb\source\repos\BCSDGAME\Node\obj\Debug\Node.csproj.AssemblyReference.cache
+C:\Users\thddb\source\repos\BCSDGAME\Node\obj\Debug\Node.csproj.CoreCompileInputs.cache
+C:\Users\thddb\source\repos\BCSDGAME\Node\obj\Debug\Node.exe
+C:\Users\thddb\source\repos\BCSDGAME\Node\obj\Debug\Node.pdb
