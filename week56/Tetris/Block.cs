@@ -139,7 +139,6 @@ partial class Block
 
         if (false == Console.KeyAvailable)
         {
-            Down();
             return;
         }
 

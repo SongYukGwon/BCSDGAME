@@ -61,7 +61,7 @@ class TETRISGAMESCREEN
             {
                 Console.Write(BlockList[y][x]);
             }
-            Console.WriteLine();
+            Console.WriteLine("");
         }
     }
     public TETRISGAMESCREEN(int _X, int _Y, bool TopAndBotLine)

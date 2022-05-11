@@ -21,7 +21,6 @@ class ACCSCREEN : TETRISGAMESCREEN
             {
                     Parent.SetBlock(y+1, x, BlockList[y][x]);
             }
-            Console.WriteLine();
         }
     }
 
