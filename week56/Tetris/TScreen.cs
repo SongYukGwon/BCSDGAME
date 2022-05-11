@@ -48,7 +48,7 @@ class TETRISGAMESCREEN
                     BlockList[y][x] = "▣";
                     continue;
                 }
-                BlockList[y][x] = "□";
+                // BlockList[y][x] = "□";
             }
         }
     }
