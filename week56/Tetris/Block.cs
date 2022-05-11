@@ -68,9 +68,46 @@ partial class Block
     {
         Arr = AllBlcok[(int)_Type][(int)_Dir];
     }
+
+    public void SetAccScreen()
+    {
+        for (int y =0; y<4; y++)
+        {
+            for (int x = 0; x<4; x++)
+            {
+                if(true)
+                {
+                     AccScreen.SetBlock(Y + y - 1, X +x, Arr[y][x]);
+                }
+               
+            }
+
+        }
+    }
+
     public void DownCheck()
     {
+        //내가 더이상 내려갈 수 없는 경우
+        //첫번째
+        for (int y =0; y<4; y++)
+        {
+            for (int x = 0; x<4; x++)
+            {
+                // 내가 "■"일때 체크해야한다.
+                if ("■" == Arr[y][x])
+                {
+                    //내가 ACC스크린의 Y랑 똑다면
+                    if(AccScreen.Y == Y + y)
+                    {
+                        //쌓인다.
+                        AccScreen.SetBlock(y, );
+                        return true;
+                    }
+                }
+            }
+        }
 
+        return false;
     }
     public void Down()
     {
@@ -79,10 +116,11 @@ partial class Block
         //ACCSCREEN에 쌓이고
         if(true== DownCheck())
         {
-
+            return;
         }
         //블록을 보내던것은 새로운것으로 바뀌면서 올라가야한다.
         Y+=1;
+        return false;
     }
 
     private void Input()

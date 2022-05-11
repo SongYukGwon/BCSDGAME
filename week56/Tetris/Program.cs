@@ -14,7 +14,7 @@ namespace Tetris
         {
             TETRISGAMESCREEN NewSC = new TETRISGAMESCREEN(10, 15, true);
             ACCSCREEN NewASC = new ACCSCREEN(NewSC);
-            Block NewBlock = new Block(NewSC);
+            Block NewBlock = new Block(NewSC, NewASC);
 
             while(true)
             {
