@@ -6,11 +6,17 @@ using System.Threading.Tasks;
 
 
 class TETRISGAMESCREEN
+
 {
+    // 블록을 표현하는부분
+    // 메모리를 더 할당해서 정보를 분리하면
+    // 대부분의 문제는 해결이 된다.
     List<List<string>> BlockList = new List<List<string>>();
+
 
     public void SetBlock(int _y, int _x, string _Type)
     {
+        //회전만 봐
         BlockList[_y][_x] = _Type;
     }
 

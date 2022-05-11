@@ -30,6 +30,8 @@ partial class Block
     int X = 0;
     int Y = 0;
     string[][] Arr = null;
+
+     Random NewRandom = new Random();
     List<List<string>> BlockData = new List<List<string>>();
 
     BLOCKTYPE CurBlockType = BLOCKTYPE.BT_T;
@@ -40,9 +42,21 @@ partial class Block
         Screen = _Screen;
         DataInit();
         //바꿀수 있는 인터페이스는 이것하나다.
+
+        //인터페이스 분리원칙
+        //자잘한 함수를 많이 만들고
+        //그걸 조합해서 새기능을 만들어라.
+        RandomBlockType();
         SettingBlock(CurBlockType, CurDirType);
     }
 
+    public void RandomBlockType()
+    {
+       
+        //int RandomIndex = NewRandom.Next((int)BLOCKTYPE.BT_I, (int)BLOCKTYPE.BT_MAX);
+        int RandomIndex = (int)BLOCKTYPE.BT_I;
+        CurBlockType = (BLOCKTYPE)RandomIndex;
+    }
 
     private void SettingBlock(BLOCKTYPE _Type, BLOCKDIR _Dir)
     {
@@ -51,6 +65,8 @@ partial class Block
 
     private void Input()
     {
+        
+
         //키를 눌렀다.
         //Consle.ReadKey()가 리턴된다.
 
