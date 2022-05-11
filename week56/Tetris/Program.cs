@@ -12,8 +12,8 @@ namespace Tetris
     {
         static void Main(string[] args)
         {
-            TETRISGAMESCREEN NewSC = new TETRISGAMESCREEN(10, 15);
-
+            TETRISGAMESCREEN NewSC = new TETRISGAMESCREEN(10, 15, true);
+            ACCSCREEN NewASC = new ACCSCREEN(NewSC);
             Block NewBlock = new Block(NewSC);
 
             while(true)
@@ -25,6 +25,8 @@ namespace Tetris
 
                 Console.Clear();
                 NewSC.Render();
+                
+                // 두개의 프레임을 사용하면 편함.
                 NewSC.Clear();
                 NewBlock.Move();
                 for (int i = 0; i < 2000000; i++)

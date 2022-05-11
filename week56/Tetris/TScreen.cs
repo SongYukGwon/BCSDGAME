@@ -11,8 +11,21 @@ class TETRISGAMESCREEN
     // 블록을 표현하는부분
     // 메모리를 더 할당해서 정보를 분리하면
     // 대부분의 문제는 해결이 된다.
-    List<List<string>> BlockList = new List<List<string>>();
+    protected List<List<string>> BlockList = new List<List<string>>();
 
+    public int X
+    {
+        get{
+            return BlockList[0].Count;
+        }
+    }
+
+    public int Y
+    {
+        get{
+            return BlockList.Count;
+        }
+    }
 
     public void SetBlock(int _y, int _x, string _Type)
     {
@@ -36,7 +49,7 @@ class TETRISGAMESCREEN
         }
     }
 
-    public void Render()
+    public virtual void Render()
     {
         for (int y = 0; y < BlockList.Count; ++y)
         {
@@ -47,7 +60,7 @@ class TETRISGAMESCREEN
             Console.WriteLine();
         }
     }
-    public TETRISGAMESCREEN(int _X, int _Y)
+    public TETRISGAMESCREEN(int _X, int _Y, bool TopAndBotLine)
     {
         //0,0을 넣어주는것 방지
 
@@ -58,6 +71,9 @@ class TETRISGAMESCREEN
             {
                 BlockList[y].Add("□");
             }
+        }
+        if (TopAndBotLine == false){
+            return;
         }
 
         for (int i = 0; i < BlockList[0].Count; i++)

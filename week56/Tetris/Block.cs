@@ -37,9 +37,15 @@ partial class Block
     BLOCKTYPE CurBlockType = BLOCKTYPE.BT_T;
     BLOCKDIR CurDirType = BLOCKDIR.BD_T;
     TETRISGAMESCREEN Screen = null;
-    public Block(TETRISGAMESCREEN _Screen)
+    ACCSCREEN AccScreen = null;
+    public Block(TETRISGAMESCREEN _Screen, ACCSCREEN _AccScreen)
     {
+        if(_Screen == null || null == _AccScreen)
+        {
+            return;
+        }
         Screen = _Screen;
+        AccScreen = _AccScreen;
         DataInit();
         //바꿀수 있는 인터페이스는 이것하나다.
 
@@ -52,7 +58,7 @@ partial class Block
 
     public void RandomBlockType()
     {
-       
+
         //int RandomIndex = NewRandom.Next((int)BLOCKTYPE.BT_I, (int)BLOCKTYPE.BT_MAX);
         int RandomIndex = (int)BLOCKTYPE.BT_I;
         CurBlockType = (BLOCKTYPE)RandomIndex;
@@ -61,6 +67,22 @@ partial class Block
     private void SettingBlock(BLOCKTYPE _Type, BLOCKDIR _Dir)
     {
         Arr = AllBlcok[(int)_Type][(int)_Dir];
+    }
+    public void DownCheck()
+    {
+
+    }
+    public void Down()
+    {
+        //아래를 확인하고
+        //내려가다가 더이상 내려갈수 없으면
+        //ACCSCREEN에 쌓이고
+        if(true== DownCheck())
+        {
+
+        }
+        //블록을 보내던것은 새로운것으로 바뀌면서 올라가야한다.
+        Y+=1;
     }
 
     private void Input()
@@ -85,7 +107,7 @@ partial class Block
                 X += 1;
                 break;
             case ConsoleKey.S:
-                Y += 1;
+                Down();
                 break;
             case ConsoleKey.Q:
                 //왼쪽으로 돌리기
