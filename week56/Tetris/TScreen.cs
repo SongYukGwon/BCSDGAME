@@ -29,8 +29,12 @@ class TETRISGAMESCREEN
 
     public void SetBlock(int _y, int _x, string _Type)
     {
-        //회전만 봐
         BlockList[_y][_x] = _Type;
+    }
+
+    public bool IsBlock(int _y, int _x, string _Type)
+    {
+        return BlockList[_y][_x] == _Type;
     }
 
     public void Clear()

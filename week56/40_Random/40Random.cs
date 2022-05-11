@@ -28,7 +28,7 @@ namespace _40Random
                 Console.WriteLine(Random);
             }
 
-            return X;
+            return 1;
         }
     }
 }

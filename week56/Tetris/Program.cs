@@ -18,7 +18,7 @@ namespace Tetris
 
             while(true)
             {
-                for (int i = 0; i < 2000000; i++)
+                for (int i = 0; i < 3000000; i++)
                 {
                     int a = 0;
                 }
@@ -29,7 +29,7 @@ namespace Tetris
                 // 두개의 프레임을 사용하면 편함.
                 NewSC.Clear();
                 NewBlock.Move();
-                for (int i = 0; i < 2000000; i++)
+                for (int i = 0; i < 3000000; i++)
                 {
                     int a = 0;
                 }

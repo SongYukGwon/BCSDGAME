@@ -31,7 +31,7 @@ partial class Block
     int Y = 0;
     string[][] Arr = null;
 
-     Random NewRandom = new Random();
+    Random NewRandom = new Random();
     List<List<string>> BlockData = new List<List<string>>();
 
     BLOCKTYPE CurBlockType = BLOCKTYPE.BT_T;
@@ -52,15 +52,14 @@ partial class Block
         //인터페이스 분리원칙
         //자잘한 함수를 많이 만들고
         //그걸 조합해서 새기능을 만들어라.
-        RandomBlockType();
-        SettingBlock(CurBlockType, CurDirType);
+        Reset();
     }
 
     public void RandomBlockType()
     {
 
-        //int RandomIndex = NewRandom.Next((int)BLOCKTYPE.BT_I, (int)BLOCKTYPE.BT_MAX);
-        int RandomIndex = (int)BLOCKTYPE.BT_I;
+        int RandomIndex = NewRandom.Next((int)BLOCKTYPE.BT_I, (int)BLOCKTYPE.BT_MAX);
+        //int RandomIndex = (int)BLOCKTYPE.BT_I;
         CurBlockType = (BLOCKTYPE)RandomIndex;
     }
 
@@ -75,7 +74,7 @@ partial class Block
         {
             for (int x = 0; x<4; x++)
             {
-                if(true)
+                if("■" == Arr[y][x])
                 {
                      AccScreen.SetBlock(Y + y - 1, X +x, Arr[y][x]);
                 }
@@ -85,7 +84,15 @@ partial class Block
         }
     }
 
-    public void DownCheck()
+    public void Reset()
+    {
+        RandomBlockType();
+        X = 0;
+        Y = 1;
+        SettingBlock(CurBlockType, CurDirType);
+    }
+
+    public bool DownCheck()
     {
         //내가 더이상 내려갈 수 없는 경우
         //첫번째
@@ -97,10 +104,11 @@ partial class Block
                 if ("■" == Arr[y][x])
                 {
                     //내가 ACC스크린의 Y랑 똑다면
-                    if(AccScreen.Y == Y + y)
+                    if(AccScreen.Y == Y + y || true == AccScreen.IsBlock(Y+y, X+x, "■"))
                     {
                         //쌓인다.
-                        AccScreen.SetBlock(y, );
+                        SetAccScreen();
+                        Reset();
                         return true;
                     }
                 }
@@ -120,7 +128,6 @@ partial class Block
         }
         //블록을 보내던것은 새로운것으로 바뀌면서 올라가야한다.
         Y+=1;
-        return false;
     }
 
     private void Input()
@@ -132,6 +139,7 @@ partial class Block
 
         if (false == Console.KeyAvailable)
         {
+            Down();
             return;
         }
 
